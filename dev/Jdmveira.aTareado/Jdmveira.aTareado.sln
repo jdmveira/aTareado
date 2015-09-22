@@ -1,0 +1,126 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jdmveira.aTareado.Common", "Jdmveira.aTareado.Common\Jdmveira.aTareado.Common.csproj", "{01E61742-7D87-44A1-A1D3-2C62CB784F5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jdmveira.aTareado.Uwp", "Jdmveira.aTareado.Uwp", "{EC29F3B6-0A1B-46CD-84C3-CE87B77A8422}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{092623D1-3B56-4B39-995E-51727E68416C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jdmveira.aTareado.UnitTests", "Jdmveira.aTareado.UnitTests\Jdmveira.aTareado.UnitTests.csproj", "{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jdmveira.aTareado", "Jdmveira.aTareado\Jdmveira.aTareado.csproj", "{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jdmveira.aTareado.ViewModel", "Jdmveira.aTareado.ViewModel\Jdmveira.aTareado.ViewModel.csproj", "{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Debug|ARM.Build.0 = Debug|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Debug|x64.Build.0 = Debug|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Debug|x86.Build.0 = Debug|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Release|ARM.Build.0 = Release|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Release|x64.ActiveCfg = Release|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Release|x64.Build.0 = Release|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Release|x86.ActiveCfg = Release|Any CPU
+		{01E61742-7D87-44A1-A1D3-2C62CB784F5A}.Release|x86.Build.0 = Release|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Debug|ARM.Build.0 = Debug|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Debug|x64.Build.0 = Debug|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Debug|x86.Build.0 = Debug|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Release|ARM.ActiveCfg = Release|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Release|ARM.Build.0 = Release|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Release|x64.ActiveCfg = Release|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Release|x64.Build.0 = Release|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Release|x86.ActiveCfg = Release|Any CPU
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55}.Release|x86.Build.0 = Release|Any CPU
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|ARM.Build.0 = Debug|ARM
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|x64.ActiveCfg = Debug|x64
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|x64.Build.0 = Debug|x64
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|x64.Deploy.0 = Debug|x64
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|x86.ActiveCfg = Debug|x86
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|x86.Build.0 = Debug|x86
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Debug|x86.Deploy.0 = Debug|x86
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|Any CPU.ActiveCfg = Release|x86
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|ARM.ActiveCfg = Release|ARM
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|ARM.Build.0 = Release|ARM
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|ARM.Deploy.0 = Release|ARM
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|x64.ActiveCfg = Release|x64
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|x64.Build.0 = Release|x64
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|x64.Deploy.0 = Release|x64
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|x86.ActiveCfg = Release|x86
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|x86.Build.0 = Release|x86
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A}.Release|x86.Deploy.0 = Release|x86
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Debug|x64.Build.0 = Debug|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Debug|x86.Build.0 = Debug|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Release|ARM.Build.0 = Release|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Release|x64.ActiveCfg = Release|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Release|x64.Build.0 = Release|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Release|x86.ActiveCfg = Release|Any CPU
+		{B8FB6B35-48F3-40D8-A229-D9BB2FB341D8}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{201BECBA-2ABE-4FBD-AF42-A6FE5841BC55} = {092623D1-3B56-4B39-995E-51727E68416C}
+		{C4B346ED-B539-4139-AF23-84F5EB8A2C1A} = {EC29F3B6-0A1B-46CD-84C3-CE87B77A8422}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://jdmveira.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Jdmveira.aTareado\\Jdmveira.aTareado.csproj
+		SccProjectTopLevelParentUniqueName1 = Jdmveira.aTareado.sln
+		SccProjectName1 = Jdmveira.aTareado
+		SccLocalPath1 = Jdmveira.aTareado
+		SccProjectUniqueName2 = Jdmveira.aTareado.Common\\Jdmveira.aTareado.Common.csproj
+		SccProjectName2 = Jdmveira.aTareado.Common
+		SccLocalPath2 = Jdmveira.aTareado.Common
+		SccProjectUniqueName3 = Jdmveira.aTareado.UnitTests\\Jdmveira.aTareado.UnitTests.csproj
+		SccProjectTopLevelParentUniqueName3 = Jdmveira.aTareado.sln
+		SccProjectName3 = Jdmveira.aTareado.UnitTests
+		SccLocalPath3 = Jdmveira.aTareado.UnitTests
+		SccProjectUniqueName4 = Jdmveira.aTareado.ViewModel\\Jdmveira.aTareado.ViewModel.csproj
+		SccProjectName4 = Jdmveira.aTareado.ViewModel
+		SccLocalPath4 = Jdmveira.aTareado.ViewModel
+	EndGlobalSection
+EndGlobal
