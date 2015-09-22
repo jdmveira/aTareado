@@ -44,7 +44,7 @@
             CreationDate = creationDate;
 
             if (!AreValidDates(StartDate, DueDate))
-                throw new ArgumentOutOfRangeException("DueDate", );
+                throw new ArgumentOutOfRangeException("DueDate", "");
         }
 
         /// <summary>
