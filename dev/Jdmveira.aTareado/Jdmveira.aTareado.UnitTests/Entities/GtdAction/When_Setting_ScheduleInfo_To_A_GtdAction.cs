@@ -38,5 +38,48 @@
 
             Assert.AreEqual<KindOfGtdAction>(expected, actual, "Action must be Today because DueDate is whithin today");
         }
+
+        [TestMethod]
+        public void It_Must_Be_A_ToDo_Action_If_DueDate_Is_Null ()
+        {
+            GtdAction a = new GtdAction();
+
+            DateTime sd = DateTime.Now;
+            var asi = new ActionScheduleInfo(sd, default(DateTime?));
+
+            a.Schedule = asi;
+
+            var expected = KindOfGtdAction.Todo;
+            var actual = GtdAction.KindOf(a);
+
+            Assert.AreEqual<KindOfGtdAction>(expected, actual, "Action must be ToDo because DueDate is null");
+        }
+
+        [TestMethod]
+        public void It_Must_Be_A_ToDo_Action_If_Schedule_Is_Null()
+        {
+            GtdAction a = new GtdAction();
+
+            var expected = KindOfGtdAction.Todo;
+            var actual = GtdAction.KindOf(a);
+
+            Assert.AreEqual<KindOfGtdAction>(expected, actual, "Action must be ToDo because Schedule is null");
+        }
+
+        [TestMethod]
+        public void It_Must_Be_A_ToDo_Action_If_DueDate_Is_In_The_Future_Of_Today()
+        {
+            GtdAction a = new GtdAction();
+
+            DateTime dd = DateTime.Now.AddDays(1);
+            var asi = new ActionScheduleInfo(default(DateTime?), dd);
+
+            a.Schedule = asi;
+
+            var expected = KindOfGtdAction.Todo;
+            var actual = GtdAction.KindOf(a);
+
+            Assert.AreEqual<KindOfGtdAction>(expected, actual, "Action must be ToDo because Schedule is null");
+        }
     }
 }

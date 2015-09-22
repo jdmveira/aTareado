@@ -42,9 +42,8 @@
             StartDate = startDate.HasValue ? startDate.Value: startDate;
             DueDate = dueDate.HasValue ? dueDate.Value : dueDate;
             CreationDate = creationDate;
-
-            if (!AreValidDates(StartDate, DueDate))
-                throw new ArgumentOutOfRangeException("DueDate", "");
+                        
+            CheckValidDates(StartDate, DueDate);
         }
 
         /// <summary>
@@ -80,6 +79,9 @@
             set
             {
                 DateTime? v = ToUtc(value);
+
+                CheckValidDates(v, DueDate);
+
                 SetProperty<DateTime?>(ref _startDate, v);
             }
         }
@@ -99,6 +101,9 @@
             set
             {
                 DateTime? v = ToUtc(value);
+
+                CheckValidDates(StartDate, v);
+
                 SetProperty<DateTime?>(ref _dueDate, v);
             }
         }
@@ -146,12 +151,14 @@
             return (this.StartDate == other.StartDate) && (this.DueDate == other.DueDate);
         }
 
-        private static bool AreValidDates (DateTime? sd, DateTime? dd)
+        private static void CheckValidDates (DateTime? sd, DateTime? dd)
         {
             if (!sd.HasValue || !dd.HasValue)
-                return true;
+                return;
 
-            return sd.Value <= dd.Value;
+            //TODO: Ver por qué los recursos no están funcionando bien
+            if (sd.Value <= dd.Value)
+                throw new ArgumentOutOfRangeException("DueDate");
         }
 
         private DateTime? _startDate;

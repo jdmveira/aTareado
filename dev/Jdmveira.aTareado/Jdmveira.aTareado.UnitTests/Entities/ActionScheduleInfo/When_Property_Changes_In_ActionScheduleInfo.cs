@@ -75,5 +75,29 @@
 
             ActionScheduleInfo asi = new ActionScheduleInfo(sd, dd);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException), "StartDate must be previous or equal to DueDate")]
+        public void It_Must_Raise_ArgumentOurOfRangeException_If_StartDate_Is_Set_Back_To_DueDate ()
+        {
+            DateTime sd = DateTime.Now;
+            DateTime dd = sd.AddDays(1);
+
+            ActionScheduleInfo asi = new ActionScheduleInfo(sd, dd);
+
+            asi.StartDate = asi.DueDate.Value.AddMilliseconds(1);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentOutOfRangeException), "StartDate must be previous or equal to DueDate")]
+        public void It_Must_Raise_ArgumentOurOfRangeException_If_DueDate_Is_Set_Previous_To_StartDate()
+        {
+            DateTime sd = DateTime.Now;
+            DateTime dd = sd.AddDays(1);
+
+            ActionScheduleInfo asi = new ActionScheduleInfo(sd, dd);
+
+            asi.DueDate = asi.StartDate.Value.AddMilliseconds(-1);
+        }
     }
 }
